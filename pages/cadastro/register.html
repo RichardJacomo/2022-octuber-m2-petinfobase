@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="./register.css">
+    <title>Petinfo - Register</title>
+</head>
+<body class="container">
+    <main class="main-container">
+        <section class="register"> 
+            <div class="div-register">
+                <h1 class="h1-register">Cadastro</h1>
+                <button class="button-back-to-login">Voltar para o login</button>
+            </div>
+            <form class="form-register" action="">
+                
+
+                <label class="first-label" for="username">Usuário</label>
+                <input class="input-register" type="text" id="username" placeholder="Digite seu usuário aqui">
+
+                <label for="email">Email</label>
+                <input class="input-register" id="email" type="email" placeholder="Digite seu email aqui">
+
+                <label for="avatar">Link da foto do perfil</label>
+                <input class="input-register" id="avatar" type="text" placeholder="Insira o link aqui">
+
+                <label for="password">Senha</label>
+                <input class="input-register" id="password" type="password" placeholder="Digite sua senha aqui">
+
+                <button type="submit" class="button-register" disabled="disabled">Cadastrar</button>
+                <button  class="button-loading-2 none"><img src="/assets/img/loading.png" alt=""></button>
+
+                
+            </form>
+            <button class="button-back-to-login-2">Voltar para o login</button>
+        </section>
+        <section class="presentation">
+                <h1 class="h1-title">Petinfo</h1>
+                <h1 class="h1-sub-title">Ooooooba!</h1>
+                <p class="p-text">Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+                <figure class="figure-presentation">
+                    <img class="img-1" src="/assets/img/pet-1.png" alt="">
+                    <div class="div-3-images">
+                        <div class="div-2-images">
+                            <img class="img-2" src="/assets/img/pet-2.png" alt="">
+                            <img class="img-3" src="/assets/img/pet-3.png" alt="">
+                        </div>
+                        <img class="img-3" src="/assets/img/pet-4.png" alt="">
+                    </div>
+                </figure>
+        </section>
+    </main>
+    <figure class="message-registered">
+        <img  class="img-message-registered none" src="/assets/img/registered.png" alt="">
+    </figure>
+    <script type="module" src="/scripts/register.js"></script>
+</body>
+</html>

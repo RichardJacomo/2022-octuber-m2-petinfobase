@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/login/login.css">
+    <title>Petinfo - Login</title>
+</head>
+<body class="container">
+    <main class="main-container">
+
+        <section class="presentation">
+            <h1 class="h1-title">Petinfo</h1>
+            <h2 class="h2-sub-title"><span class="span-blue">Amor</span> e <span class="span-blue">carinho</span> por meio do conhecimento</h2>
+            <p class="p-text">Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+            <figure class="figure-presentation">    
+                <div class="div-3-images">
+                    <div class="div-2-images">
+                        <img class="img-5" src="/assets/img/pet-5.png" alt="">
+                        <img class="img-6" src="/assets/img/pet-6.png" alt="">
+                    </div>
+                    <img class="img-7" src="/assets/img/pet-7.png" alt="">
+                </div>
+                <img class="img-8" src="/assets/img/pet-8.png" alt="">
+            </figure>
+    </section>
+
+        <section class="login"> 
+
+            <form class="form-login" action="">
+                <div class="div-login">
+                    <h1 class="h1-login">Login</h1>
+                </div>
+
+                <label for="username">Usuário</label>
+                <input class="input-login" type="text" id="username" placeholder="Digite seu usuário aqui">
+
+                <label for="password">Senha</label>
+                <input class="input-login" type="password" id="password" placeholder="Digite sua senha aqui" >
+                <p class="error-message none">A senha está incorreta</p>
+                <button class="button-login" type="submit" disabled="disabled">Acessar</button>
+                <button  class="button-loading none"><img src="/assets/img/loading.png" alt=""></button>
+
+                <div class="div-advice">
+                    <h3>Ainda não possui conta?</h3>
+                    <p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+                </div>  
+                
+            </form>
+            <button class="button-back-to-register">Cadastrar</button>
+        </section>
+
+    </main>
+    <script type="module" src="/scripts/login.js"></script>
+</body>
+</html>

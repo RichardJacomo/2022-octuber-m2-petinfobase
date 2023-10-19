@@ -1,0 +1,129 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .modal {
+    background-color: #ffffff;
+    width: 600px;
+    border-radius: 4px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8px;
+    gap: 200px;
+  }
+  
+  .modal-close {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #ADB5BD;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 16px 8px;
+  }
+  
+  .show-modal {
+    display: flex;
+  }
+  
+  .show-modal .modal {
+    animation: animateModal 1s;
+  }
+  
+  @keyframes animateModal {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .user-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;.modal-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 30px;
+    }
+    gap: 10px;
+  }
+  .img-profile-modal{
+    width: 30px;
+    border-radius: 100%;
+  }
+  .content-modal{
+    padding: 20px;
+  }
+  .title-post-modal{
+    font-size: var(--title-3);
+    color: var(--grey-1);
+    margin-bottom: 30px;
+  }
+  .text-content-post{
+    font-size: var(--text-4);
+  }
+  .date-post{
+    font-size: var(--text-5);
+    width: 115px;
+  }
+  .modal2{
+    width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--radius-2);
+  }
+  .modal-head-create{
+    display: flex;
+    justify-content: space-between;
+    gap: 330px;
+    margin-bottom: 30px;
+  }
+  .modal-body2{
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .title-create-post{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .text-create-post{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .div-button-create-post{
+      transform: translate(340px, 0px);
+  }
+  .none{
+    display: none;
+  }

@@ -1,0 +1,44 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --brand100: hsl(230, 57%, 50%);
+  --brand200: hsl(230, 68%, 54%);
+  --grey100: hsl(210, 11%, 15%);
+  --grey200: hsl(210, 10%, 23%);
+  --grey300: hsl(210, 9%, 31%);
+  --grey400: hsl(210, 7%, 56%);
+  --grey500: hsl(210, 11%, 71%);
+  --grey600: hsl(210, 16%, 93%);
+  --grey700: hsl(210, 17%, 95%);
+  --grey800: hsl(210, 17%, 98%);
+  --grey900: hsl(200, 100%, 99%);
+  --alert100: hsl(349, 57%, 50%);
+  --alert200: hsl(349, 69%, 55%);
+  --sucess100: hsl(162, 88%, 26%);
+
+  --title-1: 32px;
+  --title-2: 28px;
+  --title-3: 24px;
+  --title-4: 20px;
+  --title-5: 18px;
+  --title-6: 16px;
+
+  --text-1: 28px;
+  --text-2: 22px;
+  --text-3: 18px;
+  --text-4: 16px;
+  --text-5: 12px;
+
+  --radius-1: 4px;
+  --radius-2: 6px;
+
+}
+
+body {
+  font-family: Inter, sans-serif;
+}

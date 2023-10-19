@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/pages/home/modal.css">
+    <title>Profile Petinfo</title>
+</head>
+<body class="container">
+    <header class="nav-menu">
+        <h1 class="logo">Petinfo</h1>
+        <div class="div-profile">
+            <button class="button-create" data-create-modal="modal-create">Criar publicação</button>
+            <div class="modal-turnOff none">
+                <h2 class="h2-modal-turnOff"></h2>
+                <button class="button-modal-turnOff"><img src="/assets/img/logout.png" alt=""></button>
+            </div>
+            <!-- <img class="img-profile" src="/assets/img/pet-2.png" alt=""> -->
+        </div>
+    </header>
+    <main class="main-profile">
+        <h2 class="feed-title">Feed</h2>
+        <ul class="ul-posts">
+            <!-- <li class="li-post">
+              <div class="head-post">
+                <div class="div-profile-post">
+                    <img class="img-profile-post" src="/assets/img/pet-2.png" alt="">
+                    <h2 class="name-profile">Samuel</h2>
+                    <p>|</p>
+                    <p class="data-post">data</p>
+                </div>
+                <div class="div-button-edit-and-delete">
+                    <button class="button-edit">Editar</button>
+                    <button class="button-delete">Excluir</button>
+                </div>
+             </div>
+                <h1 class="title-post">Outubro Rosa ljahk\svgdkjhasgfkjhksdgjfhgbsdhjkfgbdfghfghfgh</h1>
+                <p class="text-post">sçkdjhgdkljfkgbjkdfbhjhgjghkjkgfgughkhjkhjkhjkhjlhdfjklhg</p>
+                <a class="access-post" href="">Acessar publicação</a>
+            </li>
+
+             <li class="li-post">
+              <div class="head-post">
+                <div class="div-profile-post">
+                    <img class="img-profile-post" src="/assets/img/pet-2.png" alt="">
+                    <h2 class="name-profile">Samuel</h2>
+                    <p>|</p>
+                    <p class="data-post">data</p>
+                </div>
+                <div class="div-button-edit-and-delete">
+                    <button class="button-edit">Editar</button>
+                    <button class="button-delete">Excluir</button>
+                </div>
+             </div>
+                <h1 class="title-post">Outubro Rosa ljahk\svgdkjhasgfkjhksdgjfhgbsdhjkfgbdfghfghfgh</h1>
+                <p class="text-post">sçkdjhgdkljfkgbjkdfbhjhgjghkjkgfgughkhjkhjkhjkhjlhdfjklhg</p>
+                <a class="access-post" href="">Acessar publicação</a>
+            </li> -->    
+        </ul>
+            <!-- modal open post -->
+        <section class="modal-wrapper" id="modal-post">
+            <div class="modal">
+                <div class="modal-header">
+                  <div class="user-parent">
+                    <img class="img-profile-modal" src="" alt="">
+                    <h3 class="user-name-modal"></h3>
+                    <p>|</p>
+                    <p class="date-post"></p>
+                  </div>
+                    <button class="modal-close" data-control-modal="modal-post">X</button>
+                </div>
+                <div class="modal-body">
+                   <div class="content-modal">
+                     <h2 class="title-post-modal"></h2>   
+                    <p class="text-content-post"></p>  
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- modal create post -->
+        <section class="modal-wrapper" id="modal-create">
+            <div class="modal2">
+                    <div class="modal-head-create">
+                        <h3 class="h3-create-post">Criando novo post</h3>
+                        <button class="modal-close2" data-create-modal="modal-create">X</button>
+                    </div>
+                    <form class="modal-body2">
+                        <label for="tit">Título do post</label>
+                        <input id="tit" class="title-create-post" type="text" placeholder="Digite o título aqui">
+                        <label for="tex">Conteúdo do post</label>
+                        <textarea id="tex" class="text-create-post" type="text" placeholder="Desenvolva o conteúdo do post aqui..." name="" id="" cols="30" rows="10" maxlength="145"></textarea>
+                        <div class="div-button-create-post">
+                             <button class="cancel-create" data-create-modal="modal-create">Cancelar</button>
+                             <button type="submit" class="post-create">Publicar</button>
+                        </div>
+                 </form>
+            </div>  
+        </div>
+        </section>
+        <!-- modal delete post -->
+        <section class="modal-wrapper" id="modal-delete">
+            <div class="modal3">
+                    <div class="modal-head-delete">
+                        <h3 class="h3-delete-post">Confirmação de exclusão</h3>
+                        <button class="modal-close3" data-delete-post="modal-delete">X</button>
+                    </div>
+                    <div class="message-delete-modal">
+                        <h2 class="title-delete">Tem certeza que deseja excluir este post?</h2>
+                        <p class="text-delete">Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+                    </div>
+                    <div class="div-certification">
+                        <!-- <button class="button-delete-cancel" data-delete-post="modal-delete">Cancelar</button> -->
+                        <!-- <button class="button-delete-confirm">Sim, excluir este post</button> -->
+                    </div>
+                 </form>
+            </div>  
+        </div>
+        </section>
+        <section class="modal-wrapper" id="modal-edit">
+            <div class="modal4">
+                    <div class="modal-head-edit">
+                        <h3 class="h3-edit-post">Edição</h3>
+                        <button class="modal-close2" data-edit-modal="modal-edit">X</button>
+                    </div>
+                    <form class="modal-body4">
+                        <label for="tit">Título do post</label>
+                        <input id="tite" class="title-edit-post" type="text" placeholder="Digite o título aqui">
+                        <label for="text">Conteúdo do post</label>
+                        <textarea id="tex" class="text-edit-post" type="text" placeholder="Desenvolva o conteúdo do post aqui..." name="" id="" cols="30" rows="10" maxlength="145"></textarea>
+                        <div class="div-button-edit-post">
+                             <button class="cancel-edit" data-edit-modal="modal-edit">Cancelar</button>
+                             <button type="submit" class="post-edit">Salvar alterações</button>
+                        </div>
+                 </form>
+            </div>  
+        </div>
+        </section>
+    </main>
+    <figure class="message-delete">
+        <img class="img-message-delete none" src="/assets/img/deleted.png" alt="">
+    </figure>
+<script type="module" src="/scripts/home.js"></script>  
+</body>
+</html>
